@@ -96,15 +96,18 @@ p {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .main-nav {
   display: flex;
   align-items: baseline;
 }
+
 .header.container {
   display: flex;
   align-items: baseline;
   margin-bottom: 0px;
 }
+
 .site-nav.list {
   font-weight: 500;
   font-size: 14px;
@@ -128,7 +131,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) color;
 }
 .site-nav.list .item {
   position: relative;
@@ -183,12 +186,12 @@ p {
 
 .mail {
   color: var(--primary-text-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
   color: var(--primary-text-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
@@ -207,7 +210,7 @@ p {
   height: 10px;
   margin-right: 8px;
   fill: currentColor;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail:hover,
 .icon-mail:focus {
@@ -220,7 +223,7 @@ p {
   height: 10px;
   margin-right: 8px;
   fill: currentColor;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-phone:hover,
@@ -407,7 +410,8 @@ p {
   margin-right: 10px;
   background-color: var(--accent-background-color);
   border-radius: 50%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -423,7 +427,7 @@ p {
   width: 20px;
   height: 20px;
   fill: var(--primary-text-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .icon-social-link,
@@ -461,14 +465,13 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--primary-text-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-client:hover,
 .link-client:focus {
   border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 4px;
   fill: var(--accent-color);
   cursor: pointer;
 }
@@ -517,7 +520,7 @@ p {
 
 .contact-footer {
   color: rgba(255, 255, 255, 0.6);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover,
@@ -551,7 +554,8 @@ p {
 
 .footer-icon.icon-social-link {
   fill: var(--primary-white-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link.social-link:hover,
@@ -574,6 +578,7 @@ p {
   margin-right: 216px;
   margin-bottom: 110px;
 }
+
 .icon-letter {
   width: 24px;
   height: 24px;
@@ -613,7 +618,8 @@ p {
   border: solid #f5f4fa;
   border-radius: 0px 0px 4px 4px;
   padding: 6px 22px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-nav:hover,
@@ -671,7 +677,7 @@ p {
   border: 1px solid #eeeeee;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-list .item:hover {
