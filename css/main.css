@@ -128,6 +128,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav.list .item {
   position: relative;
@@ -182,10 +183,12 @@ p {
 
 .mail {
   color: var(--primary-text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
   color: var(--primary-text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
@@ -204,6 +207,7 @@ p {
   height: 10px;
   margin-right: 8px;
   fill: currentColor;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail:hover,
 .icon-mail:focus {
@@ -216,6 +220,7 @@ p {
   height: 10px;
   margin-right: 8px;
   fill: currentColor;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-phone:hover,
@@ -402,6 +407,7 @@ p {
   margin-right: 10px;
   background-color: var(--accent-background-color);
   border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -417,6 +423,7 @@ p {
   width: 20px;
   height: 20px;
   fill: var(--primary-text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .icon-social-link,
@@ -454,6 +461,7 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--primary-text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-client:hover,
@@ -509,6 +517,7 @@ p {
 
 .contact-footer {
   color: rgba(255, 255, 255, 0.6);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover,
@@ -542,6 +551,7 @@ p {
 
 .footer-icon.icon-social-link {
   fill: var(--primary-white-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link.social-link:hover,
@@ -603,6 +613,7 @@ p {
   border: solid #f5f4fa;
   border-radius: 0px 0px 4px 4px;
   padding: 6px 22px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-nav:hover,
@@ -660,6 +671,7 @@ p {
   border: 1px solid #eeeeee;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-list .item:hover {
@@ -684,10 +696,14 @@ p {
   background-color: var(--accent-color);
   z-index: 2;
   padding: 63px 24px;
+  transform: translateY(100%);
   opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-ovarlay:hover,
 .project-ovarlay:focus {
   opacity: 1;
+  transform: translateY(0);
 }
